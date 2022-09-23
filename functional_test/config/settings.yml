@@ -1,0 +1,11 @@
+
+ip:
+  base_url: https://api.ipify.org
+  api_endpoint: /?format=json
+
+location:
+  base_url: http://api.ipstack.com
+
+
+weather:
+  base_url :  http://api.openweathermap.org
