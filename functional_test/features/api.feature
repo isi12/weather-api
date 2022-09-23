@@ -14,11 +14,12 @@ Feature: Ip address
     Then I get a response with my location
 
   Scenario: Get weather forecast for location
+    Given I send a request to get my ip address
     When I send a request to get weather forecast for my location
     Then I get a response with my weather forecast
 
     Scenario: Get weather forecast
       Given I send a request to get my ip address
-      And I send a request to retrieve my location
-      When i send request to get weather for my location
-      Then i get a response with my weather
+      And  I send a request to retrieve my location
+      When I send request to get weather for my location
+      Then I get a response with my weather
